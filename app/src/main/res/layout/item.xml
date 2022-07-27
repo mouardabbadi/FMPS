@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/white"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:descendantFocusability="blocksDescendants"
+      >
+
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="12dp"
+                android:layout_y="18dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Mourad Abbadi"
+                android:textColor="@color/primary"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/date3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="14dp"
+                android:layout_y="108dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="20/08/2022"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+
+                android:id="@+id/classe"                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="13dp"
+                android:layout_y="54dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Centre Oued ifran"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+
+                android:id="@+id/classe2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="14dp"
+                android:layout_y="80dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="N°Massar H148039168"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/date4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="318dp"
+                android:layout_y="15dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="GS"
+                android:textColor="@color/secondary"
+                android:textSize="50dp" />
+
+            <ImageView
+                android:id="@+id/actions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="357dp"
+                android:layout_y="125dp"
+                app:srcCompat="@drawable/ic_baseline_more_horiz_24" />
+
+        </AbsoluteLayout>
+    </LinearLayout>
+</RelativeLayout>

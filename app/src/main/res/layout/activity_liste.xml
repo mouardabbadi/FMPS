@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListeActivity"
+    android:background="@color/back">
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/abslay">
+
+                <EditText
+                    android:id="@+id/txtchercher"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_x="30dp"
+                    android:layout_y="20dp"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/text_chercher"
+                    android:drawableLeft="@drawable/ic_baseline_filter_alt_24"
+                    android:elevation="4dp"
+                    android:hint="@string/chercher"
+                    android:drawablePadding="10dp"
+                    android:textColorHint="@color/hint"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/chercherbtn"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_x="29dp"
+                    android:layout_y="75dp"
+                    android:background="@drawable/button"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Chercher"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/appCompatButton"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_x="30dp"
+                    android:layout_y="120dp"
+                    android:background="@drawable/buttonsychronise"
+                    android:drawableStart="@drawable/ic_baseline_refresh_24"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="10dp"
+                    android:text="@string/sychronise"
+                    android:textColor="@color/white" />
+
+            </AbsoluteLayout>
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/abslay">
+
+        <ListView
+            android:id="@+id/listeitem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/item">
+        </ListView>
+    </AbsoluteLayout>
+</RelativeLayout>

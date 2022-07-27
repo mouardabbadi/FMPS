@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenueActivity"
+    android:background="@color/back">
+<AbsoluteLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="570dp"
+        android:layout_x="1dp"
+        android:layout_y="149dp"
+        android:alpha=".35"
+        app:srcCompat="@drawable/fmps" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:elevation="40dp"
+        android:background="@color/primary">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="Dashbord"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="374dp"
+        android:layout_height="150dp"
+        android:layout_x="15dp"
+        android:layout_y="88dp"
+        android:elevation="90dp"
+        android:backgroundTint="@color/secondary">
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/voir"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_x="260dp"
+                android:layout_y="91dp"
+                android:background="@drawable/buttonsychronise"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Voir Tous"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="20dp"
+                android:layout_y="16dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Nombre des Eleves"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="20dp"
+                android:layout_y="59dp"
+                android:text="50"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white"
+                android:textSize="50dp" />
+        </AbsoluteLayout>
+    </androidx.cardview.widget.CardView>
+</AbsoluteLayout>
+</RelativeLayout>

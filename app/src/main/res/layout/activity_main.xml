@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/back">
+
+   <AbsoluteLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="292dp"
+          android:layout_height="257dp"
+          android:layout_x="60dp"
+          android:layout_y="23dp"
+          app:srcCompat="@drawable/fmps" />
+
+      <EditText
+          android:id="@+id/Txtuser"
+          android:layout_width="355dp"
+          android:layout_height="wrap_content"
+          android:layout_x="30dp"
+          android:layout_y="319dp"
+          android:background="@drawable/text"
+          android:ems="10"
+          android:hint="Email"
+          android:padding="15dp"
+          android:textColorHint="@color/hint" />
+
+      <EditText
+          android:id="@+id/Txtpass"
+          android:layout_width="355dp"
+          android:layout_height="wrap_content"
+          android:layout_x="30dp"
+          android:layout_y="397dp"
+          android:background="@drawable/text"
+          android:ems="10"
+          android:fontFamily="@font/poppins_light"
+
+          android:hint="Mot de passe"
+          android:inputType="textPassword"
+          android:padding="15dp"
+          android:textColorHint="@color/hint" />
+
+      <androidx.appcompat.widget.AppCompatButton
+          android:id="@+id/cnct"
+          android:layout_width="355dp"
+          android:layout_height="wrap_content"
+          android:layout_x="30dp"
+          android:layout_y="520dp"
+          android:background="@drawable/button"
+          android:fontFamily="@font/poppins_light"
+          android:text="@string/se_connecter"
+          android:textColor="@color/white" />
+
+      <TextView
+          android:id="@+id/textView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_x="3dp"
+          android:layout_y="681dp"
+          android:fontFamily="@font/poppins_light"
+          android:gravity="center"
+          android:text="@string/copyright"
+          android:textColor="@color/black" />
+
+      <CheckBox
+          android:id="@+id/checkBox"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_x="31dp"
+          android:layout_y="459dp"
+          android:buttonTint="@color/primary"
+          android:fontFamily="@font/poppins_light"
+          android:text="Remember me"
+          android:textColor="@color/black" />
+   </AbsoluteLayout>
+
+</RelativeLayout>

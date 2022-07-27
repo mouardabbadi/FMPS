@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultActivity">
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/header"
+        android:elevation="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Consultation"
+            android:textColor="@color/primary"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppins_light"
+            android:padding="20dp"/>
+    </AbsoluteLayout>
+
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/header"
+        android:id="@+id/personnel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/primary"
+            android:elevation="40dp"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:text="Information personelle"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="30dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Nom :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="54dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Prénom :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="78dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Date de naissence :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="102dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Tuteur :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="126dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="CIN Tuteur :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="150dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="N°Télephone :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="174dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Type de parent :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="166dp"
+            android:layout_y="174dp"
+            android:text="Pére"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="166dp"
+            android:layout_y="150dp"
+            android:text="+212 6 54 13 72 02"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="166dp"
+            android:layout_y="126dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="F56985122"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="166dp"
+            android:layout_y="102dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Kouider Abbadi"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="166dp"
+            android:layout_y="30dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Abbadi"
+            android:textColor="@color/primary" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="166dp"
+            android:layout_y="54dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Mourad"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="166dp"
+            android:layout_y="78dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="29/03/1998"
+            android:textColor="@color/primary" />
+
+    </AbsoluteLayout>
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/personnel"
+        android:id="@+id/scolaire">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/primary"
+            android:elevation="40dp"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:text="Information Scolaire"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="30dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Classe :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="54dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Section, :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="78dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Douar :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="102dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Année Scolaire :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="126dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Depart :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="150dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Date de départ :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="17dp"
+            android:layout_y="174dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Motif de départ :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="166dp"
+            android:layout_y="174dp"
+            android:text="Pére"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="166dp"
+            android:layout_y="150dp"
+            android:text="+212 6 54 13 72 02"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="166dp"
+            android:layout_y="126dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="F56985122"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="166dp"
+            android:layout_y="102dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Kouider Abbadi"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="166dp"
+            android:layout_y="30dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Abbadi"
+            android:textColor="@color/primary" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="166dp"
+            android:layout_y="54dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Mourad"
+            android:textColor="@color/primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="166dp"
+            android:layout_y="78dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="29/03/1998"
+            android:textColor="@color/primary" />
+
+    </AbsoluteLayout>
+</RelativeLayout>
